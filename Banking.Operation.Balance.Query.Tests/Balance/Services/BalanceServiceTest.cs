@@ -42,6 +42,7 @@ namespace Banking.Operation.Balance.Query.Tests.Balance.Services
         public void ShouldNotReturnBalanceWhenInvalidClient()
         {
             var clientId = Guid.NewGuid();
+            _clientService.Setup(c => c.GetOne(clientId)).Throws(new Exception());
 
             Func<Task> action = async () => { await _balanceService.Get(clientId); };
             action.Should().ThrowAsync<BussinessException>();
