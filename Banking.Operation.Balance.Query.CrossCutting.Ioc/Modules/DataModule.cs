@@ -1,8 +1,8 @@
-﻿using Banking.Operation.Balance.Query.Infra.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Banking.Operation.Balance.Query.Domain.Balance.Parameters;
+using Banking.Operation.Balance.Query.Domain.Balance.Repositories;
+using Banking.Operation.Balance.Query.Infra.Data.Balance.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace Banking.Operation.Balance.Query.CrossCutting.Ioc.Modules
 {
@@ -11,10 +11,10 @@ namespace Banking.Operation.Balance.Query.CrossCutting.Ioc.Modules
     {
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 26));
+            var clientParameters = configuration.GetSection("ClientApi").Get<ClientApiParameters>();
+            services.AddSingleton(clientParameters);
 
-            services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, serverVersion));
+            services.AddScoped<IBalanceRepository, BalanceRepository>();
         }
     }
 }
