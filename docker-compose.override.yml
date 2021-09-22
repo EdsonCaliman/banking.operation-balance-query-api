@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  banking.operation.balance.query.api:
+    container_name: balance.query.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:DefaultConnection=server=mysql-transaction;port=3306;user=root;password=1234;database=banking-operation-transaction"
+      - "ClientApi:Url=http://banking.operation.client.api:80/v1/banking-operation"
+    ports:
+      - "8003:80"
