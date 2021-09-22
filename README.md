@@ -14,10 +14,12 @@ Using a docker-compose configuration the components will be connected so that to
 This component will be responsible for returning a client's balance. It uses a mysql transactions database to get the data.
 
 
+![image](https://user-images.githubusercontent.com/19686147/134415624-57eba45a-869c-405f-a20f-2b615e22a0a2.png)
 
 # Bussiness Rules
 
-
+ - The request needs to have a valid client to be returned.
+ - Should return the balance of credit and debit entries to the client.
 
 # How to run
 
