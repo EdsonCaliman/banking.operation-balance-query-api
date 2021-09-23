@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Banking.Operation.Balance.Query.Api.Controllers
 {
     [ApiVersion("1.0")]
-    [Route("/v{version:apiVersion}/banking-operation/client/{clientid}/balance")]
+    [Route("/v{version:apiVersion}/banking-operation/{clientid}/balance")]
     [ApiController]
     public class BalanceController : Controller
     {
