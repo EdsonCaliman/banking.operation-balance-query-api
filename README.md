@@ -32,3 +32,6 @@ After run:
 docker-compose up -d
 
 For swagger open the URL: http://localhost:8003/swagger
+
+![image](https://user-images.githubusercontent.com/19686147/134511829-e668d74f-bab9-4848-989b-f87d06fac118.png)
+
