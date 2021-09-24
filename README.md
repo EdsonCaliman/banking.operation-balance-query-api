@@ -25,7 +25,9 @@ This component will be responsible for returning a client's balance. It uses a m
 
 With a docker already installed:
 
-Run first the project: https://github.com/EdsonCaliman/banking.operation-transaction-api
+Run first the projects: 
+https://github.com/EdsonCaliman/banking.operation-client-api
+https://github.com/EdsonCaliman/banking.operation-transaction-api
 
 After run:
 
