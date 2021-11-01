@@ -4,10 +4,12 @@ using Dapper;
 using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 namespace Banking.Operation.Balance.Query.Infra.Data.Balance.Repositories
 {
+    [ExcludeFromCodeCoverageAttribute]
     public class BalanceRepository : IBalanceRepository
     {
         private readonly IConfiguration _configuration;
