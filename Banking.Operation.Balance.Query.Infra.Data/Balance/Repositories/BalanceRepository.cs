@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Banking.Operation.Balance.Query.Infra.Data.Balance.Repositories
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public class BalanceRepository : IBalanceRepository
     {
         private readonly IConfiguration _configuration;

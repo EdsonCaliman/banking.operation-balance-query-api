@@ -2,7 +2,7 @@
 
 namespace Banking.Operation.Balance.Query.Domain.Balance.Dtos
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public class BalanceDto
     {
         public decimal Value { get; set; }

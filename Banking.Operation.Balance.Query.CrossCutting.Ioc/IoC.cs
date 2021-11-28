@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Banking.Operation.Balance.Query.CrossCutting.Ioc
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public static class IoC
     {
         public static IServiceCollection ConfigureContainer(this IServiceCollection services, IConfiguration configuration)

@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Banking.Operation.Balance.Query.CrossCutting.Ioc.Modules
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public static class DomainModule
     {
         public static void Register(this IServiceCollection services)

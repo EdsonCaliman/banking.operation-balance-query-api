@@ -2,7 +2,7 @@
 
 namespace Banking.Operation.Balance.Query.Domain.Balance.Parameters
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public class ClientApiParameters
     {
         public string Url { get; set; }

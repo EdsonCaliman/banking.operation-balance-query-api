@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Banking.Operation.Balance.Query.Domain.Balance.Dtos
 {
-    [ExcludeFromCodeCoverageAttribute]
+    [ExcludeFromCodeCoverage]
     public class ClientDto
     {
         public ClientDto()
